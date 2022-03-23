@@ -32,7 +32,7 @@ def login(command):
 
 def logout():
     res = session.post(url+"api/logout")
-    print(res.json())
+    print(res.text)
     return
 
 def list():
@@ -42,7 +42,7 @@ def list():
 
 def view():
     res = session.get(url+"api/view")
-    print(res.text)
+    print(res.json())
     return
 
 def average(command):
@@ -50,7 +50,7 @@ def average(command):
         print("average usage:\naverage <profID> <moduleID>")
         return
     res = session.post(url+"api/average",data={"profID":command[1],"moduleID":command[2]})
-    print(res.text)
+    print(res.json())
     return
 
 def rate(command):

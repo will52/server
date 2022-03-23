@@ -3,15 +3,15 @@ url = "http://127.0.0.1:8000/"
 print("Hard coded url is:",url)
 commandList = """Commands:
     'register <username> <password> <email>' - Register account with given credentials
-    'login <username> <password>' - login to session with given credentials
-    'logout' - logout of session with given credentials
+    'login <username> <password>' - Login to session with given credentials
+    'logout' - Logout of session
     'list' - Lists all modules and the professors teaching them
     'view' - Lists the average rating of all professors over all modules they teach
-    'average <profID> <moduleID>' - gives the average rating of a given professor on a given module
-    'rate <profID> <moduleID> <year> <semester> <rating>' rate a professor in a given module, year and semester, rating is 1-5, must be logged in
-    'url <new-url>' - change the hard coded url to a different one
-    'help' - see this list of commands
-    'quit' - exit the program"""
+    'average <profID> <moduleID>' - Gives the average rating of a given professor on a given module
+    'rate <profID> <moduleID> <year> <semester> <rating>' - Rate a professor in a given module, year and semester, rating is 1-5, must be logged in
+    'url <new-url>' - Change the hard coded url to a different one
+    'help' - See this list of commands
+    'quit' - Exit the program"""
 print(commandList)
 
 def register(command):
